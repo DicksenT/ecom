@@ -8,6 +8,15 @@
 nav{
     height: 80px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    line-height: 1.5;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
 }
 .container{
     width: 100%;
@@ -101,4 +110,69 @@ button{
 }
 button:active{
     transform: translateY(1px);
+}
+.header__img-wrapper{
+    padding: 20px;
+}
+.container{
+    padding: 56px 0;
+}
+.row{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.highlight__img{
+    border: 2px solid #3aace0;
+    color: #3aace0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 32px;
+    margin-bottom: 24px;
+
+}
+.hightlight_title{
+    font-size: 20px;
+    margin-bottom: 12px;
+   
+}
+.highlight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 0 24px;
+}
+.highlight__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlight__para{
+    max-width: 240px;
+    text-align: center;
+}
+.highlights:after, .highlight:before{
+    background: url(/Assets/wave.svg);
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.highlight:before{
+    transform: translateY(-190%);
+    top: 1;
+}
+.highlights:after{
+    transform: translateY(190%) rotate(180deg);
+    bottom: 1;
 }
